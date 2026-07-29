@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AntiShorts settings</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="mark" aria-hidden="true">AS</div>
+        <div>
+          <h1>AntiShorts</h1>
+          <p class="always-on">Shorts are always blocked</p>
+        </div>
+      </header>
+
+      <form id="settings-form">
+        <label for="minimum-minutes">Hide regular videos shorter than</label>
+        <div class="duration-input">
+          <input
+            id="minimum-minutes"
+            name="minimum-minutes"
+            type="number"
+            min="0"
+            max="1440"
+            step="1"
+            value="0"
+            inputmode="numeric"
+            required
+          >
+          <span>minutes</span>
+        </div>
+        <p class="hint">Use 0 to allow regular videos of any length.</p>
+        <button type="submit">Save setting</button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <script src="core.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

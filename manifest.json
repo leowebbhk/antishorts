@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "AntiShorts",
+  "version": "1.0.0",
+  "description": "Removes YouTube Shorts and hides recommended videos below your chosen length.",
+  "permissions": [
+    "storage",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://youtube.com/*"
+  ],
+  "action": {
+    "default_title": "AntiShorts settings",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://youtube.com/*"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "core.js",
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "shorts_redirects",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
