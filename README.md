@@ -1,3 +1,5 @@
+To see the prompt I used to create this software in one request to GPT 5.6 Sol Ultra, scroll to the bottom. The rest of the readme is AI-generated, until you get to the horizontal line.
+
 # AntiShorts
 
 AntiShorts is a small Chrome extension that:
@@ -90,3 +92,11 @@ node --check core.js
 node --check content.js
 node --check popup.js
 ```
+
+----
+
+Here is the prompt I used:
+
+> Okay, so I'd like you to make for me a Chrome extension which blocks YouTube Shorts. I don't want to see any YouTube Shorts recommended to me, I don't want to see them when I'm scrolling YouTube, I don't want any way to click onto them. And if somehow I am looking at a YouTube Short despite all of the efforts that have been made to remove all of the Shorts from YouTube, I want you to ensure that I am immediately directed back to my nice safe homepage where there are no Shorts. I should be running a basically normal and standard version of Chrome. I have no experience with making Chrome extensions or using them before, but I'd really like you to make this Chrome extension simple for me to put on my own Chrome. I have no idea how that's possible, so I'd like you to leave an instruction manual. When you are doing this coding, I'd like you to use as few different kind of languages and frameworks and as few different, sorry, like the simplest code possible that can eliminate Shorts for my YouTube life. Yeah, and I wouldn't like you necessarily to like place anything in their place. I'd like you to just remove them so that, say for example, if my homepage were two rows of long videos and then Shorts, and then another two rows of long videos, it should then just look like four rows of long videos. And the other thing, apart from always getting rid of Shorts, is I'd like you to have the Chrome extension have like a minimum length timer, so that if a YouTube video in any kind of recommendation area, whether that's the main page or the recommendations on the side of a video or something, has a length lower than the minimum length, then it's removed, it's not shown. Because I'd like for my YouTube just to be populated with videos longer than a period of time that is settable by me, the user of the Chrome extension. For example, say I'd like to not see any video shorter than five minutes, so I set the Chrome extension to do five minutes. Like I select five minutes in the Chrome extension somehow in some simple user interface, and then it blocks, basically, like it prevents me from seeing any Shorts or landscape orientation videos that have length less than five minutes. All right, so please go ahead and do that and give me a clear instruction manual on how to get from a perfectly normal ordinary Chrome to one where this custom extension has been installed on Chrome and is working and making my YouTube experience much better.
+
+The quality of the writing here is terrible because, to make this prompt, I simply rambled into the microphone about what I wanted.
